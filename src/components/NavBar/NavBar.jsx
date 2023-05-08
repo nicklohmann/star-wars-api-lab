@@ -1,9 +1,8 @@
-import reactLogo from '../../assets/react.svg'
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
   return ( 
     <header>
-      <img className='logo' src={ reactLogo } alt="The React Logo" />
       <nav>
           STAR WARS STARSHIPS
       </nav>
