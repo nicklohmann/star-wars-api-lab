@@ -33,4 +33,16 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+.ship-details {
+  display: flex;
+  background-color: rgb(31, 99, 91);
+  border-radius: 5px;
+  margin: 10px;
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 

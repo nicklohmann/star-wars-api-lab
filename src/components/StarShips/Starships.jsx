@@ -13,15 +13,16 @@ const Starships  = () => {
     fetchStarships()
   }, [])
   
+  if (!starships.length) return <h1>Loading Page...</h1>
+
   return (
     <main>
-      <h1></h1>
       <div className="card-container">
         {starships.map((starship, idx) => {
-          const shipshipId = starship.url.slice(21)
+          const StarshipId = starship.url.slice(21)
           return (
             <div className="ship-card" key={idx}>
-              <Link to={`${shipshipId}`}>{starship.name}</Link>
+              <Link to={`${StarshipId}`}>{starship.name}</Link>
             </div>
           )
         })}
